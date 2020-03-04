@@ -10,7 +10,7 @@ def gross_for_director(director_data)
 
   # pp director_data
   while index < director_data[:movies].count
-  # end
+  end
 end
 
 # Write a method that, given an NDS creates a new Hash
