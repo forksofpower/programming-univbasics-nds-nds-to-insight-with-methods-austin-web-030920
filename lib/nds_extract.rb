@@ -9,9 +9,10 @@ def gross_for_director(director_data)
   movies = director_data[:movies]
 
   row_index = 0
-  while index < movies.count do
-    movie = movies[index]
+  while row_index < movies.count do
+    movie = movies[row_index]
     gross_earnings += movie[:worldwide_gross]
+    row_index += 1
   end
   gross_earnings
 end
