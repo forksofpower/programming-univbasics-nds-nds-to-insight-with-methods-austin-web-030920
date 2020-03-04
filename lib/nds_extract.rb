@@ -14,7 +14,7 @@ def gross_for_director(director_data)
   #   gross_earnings += movie[:worldwide_gross]
   #   row_index += 1
   # end
-  gross_earnings movies.map{|y| y[:worldwide_gross]}.reduce(:+)
+  gross_earnings = movies.map{|y| y[:worldwide_gross]}.reduce(:+)
 end
 
 # Write a method that, given an NDS creates a new Hash
