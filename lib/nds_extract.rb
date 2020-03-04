@@ -5,8 +5,8 @@ require 'directors_database'
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
 def gross_for_director(director_data)
-  gross_earnings = movies.map{|y| y[:worldwide_gross]}.reduce(:+)
   movies = director_data[:movies]
+  gross_earnings = movies.map{|y| y[:worldwide_gross]}.reduce(:+)
   # gross_earnings = 0
   # row_index = 0
   # while row_index < movies.count do
