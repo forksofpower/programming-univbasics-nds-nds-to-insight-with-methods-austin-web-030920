@@ -1,4 +1,5 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
+require 'pp'
 require 'directors_database'
 
 # Find a way to accumulate the :worldwide_grosses and return that Integer
@@ -7,7 +8,7 @@ def gross_for_director(director_data)
   gross_earnings = 0
   index = 0
 
-pp director_data
+  pp director_data
   # while index < director_data
   # end
 end
